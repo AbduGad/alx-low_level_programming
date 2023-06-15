@@ -1,4 +1,11 @@
 #include <stdio.h>
+/*
+ * main - printing using puts
+ *
+ *
+ */
+
+
 
 
 int main (void)
