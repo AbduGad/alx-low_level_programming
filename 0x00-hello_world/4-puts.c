@@ -1,12 +1,11 @@
 #include <stdio.h>
+
+
 /*
  * main - printing string using puts
  *
  * Return: Always 0 (Success)
  */
-
-
-
 
 int main(void)
 {
