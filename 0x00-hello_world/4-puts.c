@@ -2,7 +2,7 @@
 /*
  * main - printing string using puts
  *
- *Return: Always 0 (Success)
+ * Return: Always 0 (Success)
  */
 
 
