@@ -4,6 +4,11 @@
 /* more headers goes there */
 
 /* betty style doc for function main goes there*/
+/**
+ * main - function to check conditions on the last digit of n
+ *
+ * Return: 0
+ */
 int main(void)
 {
 	int n;
@@ -12,11 +17,6 @@ int main(void)
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
 	/* your code goes there */
-	/**
-	 * main - function to print last digit of n
-	 *
-	 * Return: 0
-	 */
 	end = n % 10;
 
 	if (end > 5)
