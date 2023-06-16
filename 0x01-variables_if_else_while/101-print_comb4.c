@@ -18,17 +18,17 @@ int main(void)
 		while (j < 9)
 		{
 			k = j + 1;
-			while (t < 10)
+			while (k < 10)
 			{
 				putchar(i + '0');
 				putchar(j + '0');
-				putchar(t + '0');
-				if (i != 7 || j != 8 || t !=9)
+				putchar(k + '0');
+				if (i != 7 || j != 8 || k !=9)
 				{
 					putchar(',');
 					putchar(' ');
 				}
-				t++;
+				k++;
 			}
 			j++;
 		}
