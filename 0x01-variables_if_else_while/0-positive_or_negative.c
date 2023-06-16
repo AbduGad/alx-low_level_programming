@@ -4,6 +4,11 @@
 /* more headers goes there */
 
 /* betty style doc for function main goes there */
+/**
+ * main - getting random number and checking posi or negi or 0
+ *
+ * Return: 0
+ */
 int main(void)
 {
 	int n;
