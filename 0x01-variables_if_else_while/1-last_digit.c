@@ -7,6 +7,7 @@
 int main(void)
 {
 	int n;
+	int end;
 
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
@@ -17,8 +18,6 @@ int main(void)
 	 *
 	 * Return: 0
 	 */
-	int end;
-
 	end = n%10;
 
 	if (end > 5)
