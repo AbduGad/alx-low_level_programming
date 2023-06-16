@@ -15,7 +15,6 @@ int main(void)
 		printf("%i", b10);
 		b10++;
 	}
-	
 	printf("\n");
 	return (0);
 }
