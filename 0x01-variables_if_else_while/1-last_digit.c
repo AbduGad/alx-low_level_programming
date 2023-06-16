@@ -17,7 +17,9 @@ int main(void)
 	 *
 	 * Return: 0
 	 */
-	int end = n%10;
+	int end;
+
+	end = n%10;
 
 	if (end > 5)
 		printf("Last digit of %i is %i and is greater than 5" , n, end);
