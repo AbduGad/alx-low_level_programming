@@ -2,6 +2,7 @@
 /**
  * _islower - check lower case
  *
+ * c - character input
  * Return: 1 is true 0 otherwise
  */
 
