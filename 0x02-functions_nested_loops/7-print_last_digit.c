@@ -21,7 +21,7 @@ int print_last_digit(int x)
 	}
 	else
 	{
-		_putchar('0' + ((x * -1) % 10));
-		return ((x * -1) % 10);
+		_putchar('0' + ((x % 10) * -1);
+		return ((x % 10) * -1);
 	}
 }
