@@ -4,7 +4,7 @@
 /**
  * main - using  _putchar
  *
- * Returm: 0
+ * Return: 0
  */
 
 
