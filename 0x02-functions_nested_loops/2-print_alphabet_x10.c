@@ -1,19 +1,25 @@
 #include "main.h"
 
 /**
- * print alpha - prints alpha 10x
- * 
- * Return: no return its void
+ * print_alphabet_x10 -print alphabets 10x
+ * no input void
+ *
+ * Return: void
  */
 
 void print_alphabet_x10(void)
 {
 	int i = 0;
+	char a;
 
 	while (i < 10)
 	{
-		print_alphabet();
+		a = 'a';
+		while (a != 'z')
+		{
+			_putchar(a);
+			a++;
+		}
 		_putchar('\n');
-		i++;
 	}
 }
