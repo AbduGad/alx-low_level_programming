@@ -14,7 +14,7 @@ void print_times_table(int n)
 	int k;
 	if (n != 15 && n > 0)
 	{
-		while (i < n)
+		while (i <= n)
 		{
 			_putchar('0');
 			j = 1;
