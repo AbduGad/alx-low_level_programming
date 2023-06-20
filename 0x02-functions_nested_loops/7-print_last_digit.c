@@ -1,5 +1,4 @@
 #include "main.h"
-#include <limits.h>
 
 /**
  * print_last_digit - "sigh"
@@ -18,7 +17,7 @@ int print_last_digit(int x)
 	else if (x == 0)
 	{
 		_putchar('0');
-		return(0);
+		return (0);
 	}
 	else
 	{
