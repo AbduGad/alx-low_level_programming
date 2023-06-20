@@ -2,7 +2,7 @@
 
 /**
  * jack_bauer - print time
- * no input 
+ * no input
  *
  * Return: void no return
  */
