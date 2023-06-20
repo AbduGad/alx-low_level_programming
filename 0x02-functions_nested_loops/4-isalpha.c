@@ -2,7 +2,7 @@
 
 /**
  * _isalpha - check if char is a lower/upper case or otherwise
- * @c: input 
+ * @c: input
  * Return: 1 if true 0 otherwise
  */
 
