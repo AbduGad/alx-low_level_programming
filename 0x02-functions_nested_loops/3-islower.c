@@ -2,7 +2,7 @@
 /**
  * _islower - check lower case
  *
- * int c - character input
+ * @c - character input
  * Return: 1 is true 0 otherwise
  */
 
