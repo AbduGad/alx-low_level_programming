@@ -1,10 +1,10 @@
 #include "main.h"
 
 /**
+ * jack_bauer - print time
+ * no input 
  *
- *
- *
- *
+ * Return: void no return
  */
 
 void jack_bauer(void)
@@ -24,7 +24,7 @@ void jack_bauer(void)
 			_putchar((j % 10) + '0');
 			_putchar('\n');
 			j++;
-		}	
+		}
 		i++;
 	}
 }
