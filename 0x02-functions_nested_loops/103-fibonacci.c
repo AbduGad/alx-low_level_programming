@@ -24,6 +24,6 @@ int main(void)
 			sum += cn;
 		}
 	}
-	printf("%.0f\n", sum);
+	printf("%.0ld\n", sum);
 	return (0);
 }
