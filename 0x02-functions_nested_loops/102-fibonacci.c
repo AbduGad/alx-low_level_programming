@@ -19,7 +19,7 @@ int main(void)
 		sum = on + n;
 		on = n;
 		n = sum;
-		printf("%d, ", n);
+		printf("%f, ", n);
 		i++;
 	}
 	printf("\n");
