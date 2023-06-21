@@ -3,7 +3,7 @@
 
 /**
  * main - prints the sum of even nums in fabonacci sequence
- * 
+ *
  * Return: 0
  */
 
