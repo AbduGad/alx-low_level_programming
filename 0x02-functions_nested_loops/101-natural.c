@@ -2,11 +2,10 @@
 #include <stdio.h>
 
 /**
+ * main - print sum of multiples
+ * void
  *
- *
- *
- *
- *
+ * Return: 0
  */
 
 int main(void)
