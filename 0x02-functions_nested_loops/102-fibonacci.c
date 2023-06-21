@@ -21,6 +21,7 @@ int main()
 		n = sum;
 		
 		printf("%d, ", n);
+		i++;
 	}
 	printf("\n");
 	return (0);
