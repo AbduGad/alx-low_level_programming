@@ -14,12 +14,12 @@ int main(void)
 	double sum;
 
 	printf("1, 2, ");
-	while (i <= 50)
+	while (i < 48)
 	{
 		sum = on + n;
 		on = n;
 		n = sum;
-		printf("%f, ", n);
+		printf("%.0f, ", n);
 		i++;
 	}
 	printf("\n");
