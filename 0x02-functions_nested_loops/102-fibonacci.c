@@ -9,9 +9,9 @@
 int main(void)
 {
 	int i = 0;
-	int n = 2;
-	int on = 1;
-	int sum;
+	double n = 2;
+	double on = 1;
+	double sum;
 
 	printf("1, 2, ");
 	while (i <= 50)
