@@ -6,7 +6,7 @@
  * Return: 0
  */
 
-void main()
+int main()
 {
 	int i = 0;
 	int n = 2;
@@ -23,4 +23,5 @@ void main()
 		printf("%d, ", n);
 	}
 	printf("\n");
+	return (0);
 }
