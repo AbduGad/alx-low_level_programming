@@ -9,7 +9,7 @@
  *
  */
 
-void main(void)
+int main(void)
 {
 	int sum = 0;
 	int i;
@@ -20,4 +20,5 @@ void main(void)
 			sum += i;
 	}
 	printf("%d\n", sum);
+	return (0);
 }
