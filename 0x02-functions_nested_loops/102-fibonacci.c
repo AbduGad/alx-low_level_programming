@@ -13,13 +13,14 @@ int main(void)
 	double on = 1;
 	double sum;
 
-	printf("1, 2, ");
+	printf("1, 2");
 	while (i < 48)
 	{
+		printf(", ");
 		sum = on + n;
 		on = n;
 		n = sum;
-		printf("%.0f, ", n);
+		printf("%.0f", n);
 		i++;
 	}
 	printf("\n");
