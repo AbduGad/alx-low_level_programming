@@ -2,6 +2,7 @@
 
 /**
 * _isupper - checks upper
+* @c: input
 *
 * Return: 0
 */
