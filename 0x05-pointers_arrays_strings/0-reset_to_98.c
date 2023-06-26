@@ -2,7 +2,7 @@
 
 /**
 * reset_to_98 - resets inpur to 98
-* @*n: input
+* @n: input
 *
 * Return: void
 */
