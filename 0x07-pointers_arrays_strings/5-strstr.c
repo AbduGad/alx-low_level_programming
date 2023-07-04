@@ -1,11 +1,11 @@
 #include "main.h"
 
 /**
-*_strstr - finds the first occurrence of string in a string
-*@hay: input
-*@needle: input
-*Return: pointer to the first letter when found
-*/
+ *_strstr - finds the first occurrence of string in a string
+ *@hay: input
+ *@needle: input
+ *Return: pointer to the first letter when found
+ */
 
 char *_strstr(char *hay, char *needle)
 {
@@ -20,10 +20,12 @@ char *_strstr(char *hay, char *needle)
 			p = &hay[i];
 		}
 		if (hay[i] == needle[j])
-				j++;
+			j++;
 		else
-				b = 0;
-				j = 0;
+		{
+			b = 0;
+			j = 0;
+		}
 	}
 	if (b == 1)
 		return (p);
