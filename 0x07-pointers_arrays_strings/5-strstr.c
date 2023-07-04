@@ -10,21 +10,23 @@
 char *_strstr(char *hay, char *needle)
 {
 	char *p;
-	int i, j = 0;
+	int i, j = 0, b;
 
 	for (i = 0; hay[i]; i++)
 	{
-		if (needle[j])
+		if (hay[i] == needle[0])
 		{
-			if (hay[i] == needle[0])
-				p = &hay[i];
-			if (hay[i] == needle[j])
-				j++;
-			else
-				j = 0;
+			b = 1;
+			p = &hay[i];
 		}
+		if (hay[i] == needle[j])
+				j++;
 		else
-			return (p);
+				b = 0;
+				j = 0;
 	}
-	return (0);
+	if (b == 1)
+		return (p);
+	else
+		return (0);
 }
