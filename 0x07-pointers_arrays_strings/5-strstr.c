@@ -10,7 +10,7 @@
 char *_strstr(char *hay, char *needle)
 {
 	char *p;
-	int i, j = 0, b;
+	int i, j = 0, b = 0;
 
 	for (i = 0; hay[i] && needle[j]; i++)
 	{
