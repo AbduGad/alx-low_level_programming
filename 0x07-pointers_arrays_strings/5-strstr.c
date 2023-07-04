@@ -30,5 +30,5 @@ char *_strstr(char *hay, char *needle)
 	if (b == 1)
 		return (p);
 	else
-		return (p = "NULL");
+		return (0);
 }
