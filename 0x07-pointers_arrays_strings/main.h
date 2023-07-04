@@ -8,7 +8,7 @@ char *_strchr(char *s, char c);
 unsigned int _strspn(char *s, char *a);
 char *_strpbrk(char *s, char *accept);
 char *_strstr(char *hay, char *needle);
-
+void print_diagsums(int *a, int size);
 
 
 
