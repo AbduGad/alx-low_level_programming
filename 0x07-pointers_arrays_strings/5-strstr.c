@@ -10,7 +10,7 @@
 char *_strstr(char *hay, char *needle)
 {
 	char *p = "NULL";
-	int i, j = 0;
+	int i, j = 0, b = 0;
 
 	if (!*needle)
 		return (p = hay);
@@ -18,14 +18,19 @@ char *_strstr(char *hay, char *needle)
 	{
 		if (hay[i] == needle[0])
 		{
+			b = 1;
 			p = &hay[i];
 		}
 		if (hay[i] == needle[j])
 			j++;
 		else
 		{
+			b = 0;
 			j = 0;
 		}
 	}
-	return (0);
+	if (b == 1)
+		return (p);
+	else
+		return (0);
 }
