@@ -27,5 +27,5 @@ char *_strstr(char *hay, char *needle)
 			j = 0;
 		}
 	}
-	return (p);
+	return (0);
 }
