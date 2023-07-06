@@ -13,7 +13,7 @@ char *_strstr(char *hay, char *needle)
 	int i, j = 0;
     
     if (!*needle)
-        return(p = hay);
+        return (p = hay);
 	for (i = 0; hay[i] && needle[j]; i++)
 	{
 		if (hay[i] == needle[0])
