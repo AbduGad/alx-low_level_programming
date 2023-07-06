@@ -11,9 +11,9 @@ char *_strstr(char *hay, char *needle)
 {
 	char *p = "NULL";
 	int i, j = 0;
-    
-    if (!*needle)
-        return (p = hay);
+
+	if (!*needle)
+		return (p = hay);
 	for (i = 0; hay[i] && needle[j]; i++)
 	{
 		if (hay[i] == needle[0])
