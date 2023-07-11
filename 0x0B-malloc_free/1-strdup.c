@@ -3,9 +3,9 @@
 
 /**
  * _strlen - to get string length
- * 
+ *
  * @s: input
- * Return: size of s 
+ * Return: size of s
  */
 int _strlen(char *s)
 {
@@ -20,11 +20,11 @@ int _strlen(char *s)
 }
 
 /**
-* _strdup - returns a pointer to a newly allocated space in memory,r.
-*@str: String to be copied
-*
-*Return: NULL in case of error, pointer to allocated space
-*/
+ * _strdup - returns a pointer to a newly allocated space in memory,r.
+ *@str: String to be copied
+ *
+ *Return: NULL in case of error, pointer to allocated space
+ */
 char *_strdup(char *str)
 {
 	char *cpy;
