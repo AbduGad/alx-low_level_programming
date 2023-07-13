@@ -5,7 +5,7 @@
  * free_grid - frees 2d array
  * @grid: input
  * @height: height of grid
- * 
+ *
  * Return: void
  *
  */
