@@ -1,5 +1,5 @@
-#ifndef OBJ_MACRO
-#define OBJ_MMACRo
+#ifndef OBJ_MACRO_H
+#define OBJ_MACRO_H
 
 #ifndef SIZE
 #define SIZE 1024
