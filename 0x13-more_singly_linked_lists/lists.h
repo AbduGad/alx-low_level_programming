@@ -18,7 +18,7 @@ typedef struct listint_s
 #include <stdlib.h>
 #include <string.h>
 
-size_t print_listint(listint_t* head);
+size_t print_listint(listint_t *head);
 
 
 
