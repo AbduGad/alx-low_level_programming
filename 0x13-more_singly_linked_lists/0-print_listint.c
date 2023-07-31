@@ -14,6 +14,5 @@ size_t print_listint(const listint_t *h)
         size++;
         h = h->next;
     }
-    printf("-> %i elements", size);
-    return (size);
+    return ((long unsigned int)size);
 }
