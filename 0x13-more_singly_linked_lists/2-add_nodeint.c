@@ -3,6 +3,7 @@
  * @add_nodeint - Write a function that adds a new node at the beginning of a list 
  * @head: list head
  * @n: value
+ * Return: head pointer
  */
 listint_t *add_nodeint(listint_t **head, const int n)
 {
