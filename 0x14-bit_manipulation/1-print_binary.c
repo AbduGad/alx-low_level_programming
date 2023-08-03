@@ -14,7 +14,9 @@ void print_binary(unsigned long int n)
         shifts++;
         copy >>= 1;
     }
-    while(shifts >= 0)
+    if (shifts == 0)
+        _putchar(0 +'0');
+    while(shifts > 0)
     {
         res = (n >> shifts) & 1;
         _putchar(res + '0');
