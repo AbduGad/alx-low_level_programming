@@ -9,17 +9,16 @@ void print_binary(unsigned long int n)
     unsigned int copy = n, res;
     int shifts = 0;
 
-    while (copy)
+    while (copy > 0)
     {
         shifts++;
         copy >>= 1;
     }
     if (shifts == 0)
         _putchar(0 +'0');
-    while(shifts > 0)
+    while(--shifts > 0)
     {
         res = (n >> shifts) & 1;
         _putchar(res + '0');
-        shifts--;
     }
 }
