@@ -1,11 +1,8 @@
 #include "main.h"
-/**
- * rint_binary - Write a function that prints the binary representation of a number
- * 
- * @n: number
- */
-void print_binary(unsigned long int n)
+
+void main()
 {
+    unsigned int n = 0;
     unsigned int copy = n, res;
     int shifts = 0;
 
