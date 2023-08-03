@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include "main.h"
+#include <limits.h>
 
 /**
  * main - check the code
@@ -8,15 +9,15 @@
  */
 int main(void)
 {
-    unsigned int n;
+    unsigned long int n;
 
-    n = flip_bits(1024, 1);
+    n = flip_bits(0, 0);
     printf("%u\n", n);
-    n = flip_bits(402, 98);
+    n = flip_bits(234234423402, 1987609);
     printf("%u\n", n);
-    n = flip_bits(1024, 3);
+    n = flip_bits(ULONG_MAX, ULONG_MAX - 1);
     printf("%u\n", n);
-    n = flip_bits(1024, 1025);
+    n = flip_bits(ULONG_MAX, 0);
     printf("%u\n", n);
     return (0);
 }
