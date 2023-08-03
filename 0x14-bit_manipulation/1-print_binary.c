@@ -6,7 +6,7 @@
  */
 void print_binary(unsigned long int n)
 {
-    unsigned int copy = n;
+    unsigned int copy = n, res;
     int shifts = 0;
 
     while (copy)
@@ -16,7 +16,8 @@ void print_binary(unsigned long int n)
     }
     while(shifts > 0)
     {
-        _putchar((n >> shifts) & 1);
+        res = (n >> shifts) & 1;
+        _putchar(res);
         shifts--;
     }
 }
