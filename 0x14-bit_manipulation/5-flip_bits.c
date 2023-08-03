@@ -10,6 +10,8 @@ unsigned int flip_bits(unsigned long int n, unsigned long int m)
     unsigned long int c = (n > m) ? (n) : (m);
 
     /*printf("c -%lu shifts - %lu\n", c, c >> 10);*/
+    if (n == 0 || m == 0)
+        return (0);
     while (c)
     {
         c >>= 1;
