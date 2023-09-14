@@ -11,7 +11,7 @@ size_t print_dlistint(const dlistint_t *h)
 	nodes = 0;
 	if (h == NULL)
 	{
-		printf("Empty list");
+		/*printf("Empty list");*/
 		return (0);
 	}
 	while (h->prev)
