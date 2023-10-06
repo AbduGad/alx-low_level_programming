@@ -25,7 +25,7 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 	while (holder)
 			holder = holder->next;
 
-	printf("here\n");
+	/*printf("here\n");*/
 	holder = malloc(sizeof(hash_node_t));
 	if (!holder)
 		return (0);
@@ -46,7 +46,7 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 	}
 	holder->next = ht->array[index];
 	ht->array[index] = holder;
-	printf("end\n");
+	/*printf("end\n");*/
 
 	return (1);
 }
