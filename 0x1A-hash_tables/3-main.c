@@ -11,8 +11,12 @@
 int main(void)
 {
     hash_table_t *ht;
+	int hti;
 
     ht = hash_table_create(1024);
-    hash_table_set(ht, "betty", "cool");
+    hti = hash_table_set(ht, "hetairas", "cool");
+	printf("%d\n", hti);
+	hti = hash_table_set(ht, "mentioner", "cool");
+	printf("%d\n", hti);
     return (EXIT_SUCCESS);
 }

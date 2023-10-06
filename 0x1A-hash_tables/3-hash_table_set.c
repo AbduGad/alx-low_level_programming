@@ -10,7 +10,7 @@
 int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 {
 	unsigned int index;
-	hash_node_t *check;
+	hash_node_t *holder;
 
 	if (!ht || !value)
 		return (0);
@@ -20,30 +20,33 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 		return (0);
 	}
 	index = key_index((const unsigned char *)key, ht->size);
-	check = ht->array[index];
+	holder = ht->array[index];
 
-	while (check)
-			check = check->next;
+	while (holder)
+			holder = holder->next;
 
-	check = malloc(sizeof(hash_node_t));
-	if (!check)
+	printf("here\n");
+	holder = malloc(sizeof(hash_node_t));
+	if (!holder)
 		return (0);
-	check->key = strdup(key);
-	if (!(check->key))
+	holder->key = strdup(key);
+	if (!(holder->key))
 	{
-		free(check);
-		check = NULL;
+		free(holder);
+		holder = NULL;
 		return (0);
 	}
-	check->value = strdup(value);
-	if (!(check->value))
+	holder->value = strdup(value);
+	if (!(holder->value))
 	{
-		free(check->key);
-		free(check);
-		check = NULL;
+		free(holder->key);
+		free(holder);
+		holder = NULL;
 		return (0);
 	}
-	check->next = NULL;
+	holder->next = ht->array[index];
+	ht->array[index] = holder;
+	printf("end\n");
 
 	return (1);
 }
