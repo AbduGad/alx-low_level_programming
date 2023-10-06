@@ -23,7 +23,7 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 	holder = ht->array[index];
 
 	while (holder)
-			holder = holder->next;
+		holder = holder->next;
 
 	/*printf("here\n");*/
 	holder = malloc(sizeof(hash_node_t));
