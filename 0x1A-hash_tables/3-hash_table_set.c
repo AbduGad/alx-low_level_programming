@@ -19,7 +19,7 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 		write(2, "key cannot be an empty string", 30);
 		return (0);
 	}
-	index = key_index(key, ht->size);
+	index = key_index((const unsigned char *)key, ht->size);
 	check = ht->array[index];
 
 	while (check)
@@ -44,4 +44,6 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 		return (0);
 	}
 	check->next = NULL;
+
+	return (1);
 }
