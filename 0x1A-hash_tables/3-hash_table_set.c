@@ -20,9 +20,18 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 	holder = ht->array[index];
 
 	while (holder)
+	{
+		if (!strcmp(holder->key, key))
+		{
+			free(holder->value);
+			holder->value = strdup((char *)value);
+			if (!(holder->value))
+				return (0);
+			return (1);
+		}
 		holder = holder->next;
+	}
 
-	/*printf("here\n");*/
 	holder = malloc(sizeof(hash_node_t));
 	if (!holder)
 		return (0);
@@ -43,7 +52,6 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 	}
 	holder->next = ht->array[index];
 	ht->array[index] = holder;
-	/*printf("end\n");*/
 
 	return (1);
 }
