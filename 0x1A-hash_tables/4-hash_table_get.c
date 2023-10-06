@@ -4,7 +4,7 @@
  *
  * @ht:  hash table you want to look into
  * @key:  key you are looking for
- * Return: value associated with the element, or NULL if key couldn’t be found 
+ * Return: value, or NULL if key couldn’t be found
  */
 char *hash_table_get(const hash_table_t *ht, const char *key)
 {
@@ -15,9 +15,9 @@ char *hash_table_get(const hash_table_t *ht, const char *key)
 	holder = ht->array[index];
 	while (holder && strcmp(holder->key, key))
 		holder = holder->next;
-	
+
 	if (!holder)
 		return (NULL);
-	
+
 	return (holder->value);
 }
